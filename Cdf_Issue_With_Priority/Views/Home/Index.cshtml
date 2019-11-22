@@ -1,0 +1,11 @@
+﻿@using ClientDependency.Core.Mvc
+
+@{
+    // Does NOT work
+    //Html.RequiresJs("~/Scripts/Script3.js", FilePriority.Fourty);
+
+    // Works!
+    Html.RequiresJs("~/Scripts/Script3.js", (int)FilePriority.Fourty);
+}
+
+<p>View Content</p>
